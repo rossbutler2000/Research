@@ -10,15 +10,17 @@ are listed.
 import os
 
 os.chdir("..")
-mass_file = os.path.abspath(os.curdir) + "/Data/mass.dat"
+mass_file = os.path.abspath(os.curdir) + "/Data/elements.dat"
 
 # Dictionary of known masses from mass.dat
 masses = {}
 f = open(mass_file)
 f.readline()
 for line in f:
-    lis = line.split()
-    masses[lis[0]] = float(lis[1])
+    lis = line.split('-')
+    for i in range(len(lis)):
+        lis[i] = lis[i].strip('\n, ')
+    masses[lis[0]] = float(lis[2])
 f.close()
 
 def Mass(lis):
