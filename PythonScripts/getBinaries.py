@@ -20,7 +20,7 @@ import pickle
 
 
 #My API key
-MAPI_KEY = "q8pQyFEnL5Z7O2oc"
+MAPI_KEY = ### Your own MaterialsProject key must go here
 
 #Elements to get
 a = ["Cu", "Ag", "Au"]
