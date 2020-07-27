@@ -1,3 +1,2 @@
-- Get rid of MP Keys in Ternary and Binary
 - Fix cif2Pos where elements arent in the correct position
    - Make createPot better with this as well
