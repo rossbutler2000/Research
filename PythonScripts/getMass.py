@@ -7,8 +7,11 @@ elements.
 '''
 import os
 
+# Pathing
+path = os.path.abspath(os.curdir)
 os.chdir("..")
 mass_file = os.path.abspath(os.curdir) + "/Data/elements.dat"
+os.chdir(path)
 
 # Dictionary of known masses from mass.dat
 masses = {}
